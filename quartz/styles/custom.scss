@@ -1,3 +1,39 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+/* 1. Reduce Code Block Tab Indentation */
+code, pre {
+  tab-size: 2 !important;       /* Changes default 4 or 8 space tabs to a tight 2 spaces */
+  -moz-tab-size: 2 !important;  /* Ensures compatibility for Firefox browsers */
+}
+
+/* 2. Add More Space Between Breadcrumbs and Page Title */
+.breadcrumb-container {
+  margin-bottom: 1.5rem !important; /* Pushes the title down, away from the breadcrumbs */
+}
+
+/* Optional: Add space below the Title before the content starts */
+.page-title {
+  margin-bottom: 2rem !important; 
+}
+
+/* Center all images in the content body and add clean spacing */
+.page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;    /* Adds space above the image */
+  margin-bottom: 1.5rem; /* Adds space below the image */
+  width: 70%;
+  max-width: 100%;       /* Ensures large images don't overflow on mobile */
+  height: auto;
+}
+
+/* 2. Desktop Override: Triggers when the screen width is large */
+@media (min-width: 768px) {
+  .page img {
+    max-width: 60%; /* <--- Constraints image size to 60% on laptops and desktops */
+  }
+}
+

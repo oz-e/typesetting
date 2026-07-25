@@ -111,9 +111,9 @@ plugins:
   - source: "@quartz-community/quartz-fonts"
     enabled: true
     options:
-      header: "Source Sans Pro"
-      body: "Source Sans Pro"
-      code: "Source Code Pro"
+      header: "Google Sans Flex"
+      body: "Google Sans Flex"
+      code: "Google Sans Code"
   - source: "@quartz-community/remove-draft"
     enabled: true
   - source: "@quartz-community/explicit-publish"
@@ -266,7 +266,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
       theme: default
   - source: "@quartz-community/obsidian-plugin-excalidraw"
