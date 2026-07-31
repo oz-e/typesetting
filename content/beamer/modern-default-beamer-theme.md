@@ -1,5 +1,7 @@
 ---
 title: Modern-looking Beamer "default" theme
+tags:
+  - beamer
 ---
 Some reject Beamer and find it too old-fashioned.
 

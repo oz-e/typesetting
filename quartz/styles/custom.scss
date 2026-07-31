@@ -20,15 +20,38 @@ code, pre {
   margin-right: auto;
   margin-top: 1.5rem;    /* Adds space above the image */
   margin-bottom: 1.5rem; /* Adds space below the image */
-  width: 70%;
+  width: 90%;
   max-width: 100%;       /* Ensures large images don't overflow on mobile */
   height: auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px
 }
 
-/* 2. Desktop Override: Triggers when the screen width is large */
-@media (min-width: 768px) {
-  .page img {
-    max-width: 60%; /* <--- Constraints image size to 60% on laptops and desktops */
+/* Force all embedded SVG tables to be fully responsive and match standard images */
+p object[type="image/svg+xml"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;    
+  margin-bottom: 1.5rem; 
+  width: 90%;            /* Matches your standard image layout */
+  max-width: 100%;       
+  height: auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px
+}
+
+/* Increase touch target sizes for the Explorer list on mobile screens */
+@media (max-width: 768px) {
+  #explorer-content ul li {
+    padding-top: 0.6rem;    /* Adds vertical spacing above text */
+    padding-bottom: 0.6rem; /* Adds vertical spacing below text */
+  }
+
+  #explorer-content a {
+    display: inline-block;  /* Expands the clickable zone to the full height */
+    width: 100%;            /* Allows users to tap anywhere along the line */
   }
 }
-
