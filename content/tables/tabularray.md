@@ -1,9 +1,9 @@
 ---
 title: Using tabularray to create tables in LaTeX
 ---
-It's unfortunate that tabularray, as of the last time I checked (December 2025) was going to become an unmaintained package, as the then maintainer shared that they would no longer maintain it. While it still works, I wanted to show you a simple example of what I was able to do with it, as well as tell you why it's so good.
+It's unfortunate that `tabularray`, as of the last time I checked (December 2025) was going to become an unmaintained package, as the then maintainer shared that they would no longer maintain it. While it still works, I wanted to show you a simple example of what I was able to do with it, as well as tell you why it's so good.
 
-![[tabularray-table.svg]]
+![[../images/tabularray-table.png]]
   
 
 # Code

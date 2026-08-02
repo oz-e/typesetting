@@ -1,9 +1,10 @@
 ---
 title: Callouts with tcolorbox
 ---
-For a variety of documents I've produced, I have made use of the `tcolorbox` package, which makes it easy to create callouts. Some examples are below
+For a variety of documents I've produced, I have made use of the `tcolorbox` package, which makes it easy to create callouts. Some examples are below.
 
-![[callout-both.svg]]
+![[../images/callout-both.png]]
+
 
 Example use:
 
@@ -25,7 +26,7 @@ Unless you are adding [[codeblocks-with-tcolorbox|code to your tcolorboxes]], yo
 
 # Callout with icon
 
-![[callout-info.svg]]
+![[../images/callout-info.png]]
 
 Here is the definition for an information box:
 
@@ -61,7 +62,7 @@ At some point I will look into generalising this callout definition, so that the
 
 # Callout with floating title
 
-![[callout-big.svg]]
+![[../images/callout-big.png]]
 
 Here is the code for the callout with a floating title:
 
@@ -86,7 +87,7 @@ There isn't much different between this and the previous box, so I'll focus on t
 
 ## Future enhancements
 
-The text I include in the example image at the start of the article for the callout with a floating title mentions a few features of this callout from the textbook I saw these callouts in originally. In that textbook, the callouts were used to hold large amounts of text, usually splitting across pages. There were also several aspects of these callouts that interested me, beyond what I have described in the [[callouts-with-tcolorbox#Callout with floating title|previous section]]:
+The text I include in the example image at the start of the article for the callout with a floating title mentions a few features of this callout from the textbook I saw these callouts in originally. In that textbook, the callouts were used to hold large amounts of text, usually splitting across pages. There were also several aspects of these callouts that interested me, beyond what I have described in the [[#Callout with floating title|previous section]]:
 
 - The box border runs into the margin, while the inner text stays the same width as surrounding unboxed text
 - The thicker part of the the box border would always point to the outer edge of the page.

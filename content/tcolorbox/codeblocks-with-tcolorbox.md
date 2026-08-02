@@ -2,8 +2,9 @@
 title: Codeblocks with tcolorbox
 tags:
   - listing
+  - tcolorbox
 ---
-![[code-callout.svg]]
+![[../images/code callout.png]]
 
 It looks simple, but this is a tcolorbox that has:
 

@@ -13,14 +13,62 @@ code, pre {
   margin-bottom: 1.5rem !important; /* Pushes the title down, away from the breadcrumbs */
 }
 
+/* Hide heading copy-link anchors so they do not affect spacing */
+h1[id] > a[href^="#"],
+h2[id] > a[href^="#"],
+h3[id] > a[href^="#"],
+h4[id] > a[href^="#"],
+h5[id] > a[href^="#"],
+h6[id] > a[href^="#"] {
+  display: none !important;
+}
+
+/* Keep note properties tags, but hide the Properties header row */
+details.note-properties > summary.note-properties-header {
+  display: none !important;
+}
+
+/* Make the tags row look like a clean inline tag list */
+details.note-properties {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.note-properties .note-properties-row,
+.note-properties .metadata-property {
+  border-bottom: none !important;
+}
+
+.note-properties .note-properties-key,
+.note-properties .metadata-property-key {
+  display: none !important;
+}
+
+.note-properties .note-properties-value,
+.note-properties .metadata-property-value {
+  padding: 0 !important;
+}
+
+.note-properties .note-properties-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+/* Remove the overflow fade from the left sidebar explorer list */
+.sidebar.left ul.overflow.gradient-active,
+.sidebar.left ol.overflow.gradient-active {
+  mask-image: none !important;
+}
+
 /* Center all images in the content body and add clean spacing */
 .page img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5rem;    /* Adds space above the image */
-  margin-bottom: 1.5rem; /* Adds space below the image */
-  width: 90%;
+  margin-top: .5rem;    /* Adds space above the image */
+  margin-bottom: .5rem; /* Adds space below the image */
+//   width: 90%;
   max-width: 100%;       /* Ensures large images don't overflow on mobile */
   height: auto;
   background-color: #ffffff;
@@ -33,8 +81,8 @@ p object[type="image/svg+xml"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5rem;    
-  margin-bottom: 1.5rem; 
+  margin-top: .5rem;    
+  margin-bottom: .5rem; 
   width: 90%;            /* Matches your standard image layout */
   max-width: 100%;       
   height: auto;

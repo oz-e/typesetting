@@ -346,6 +346,35 @@ describe("link strategies", () => {
   })
 })
 
+describe("normalizeRelativeURLs", () => {
+  test("rebases object data URLs", () => {
+    const objectEl = {
+      getAttribute(name: string) {
+        return name === "data" ? "./callout-both.svg" : null
+      },
+      setAttribute(name: string, value: string) {
+        if (name === "data") {
+          this.data = value
+        }
+      },
+      data: "./callout-both.svg",
+    }
+
+    const fakeDocument = {
+      querySelectorAll(selector: string) {
+        if (selector === 'object[data=""], object[data^="./"], object[data^="../"]') {
+          return [objectEl] as unknown as NodeListOf<Element>
+        }
+        return [] as unknown as NodeListOf<Element>
+      },
+    } as unknown as Document
+
+    path.normalizeRelativeURLs(fakeDocument, new URL("https://example.com/tcolorbox/page"))
+
+    assert.strictEqual(objectEl.data, "/tcolorbox/callout-both.svg")
+  })
+})
+
 describe("resolveRelative", () => {
   test("from index", () => {
     assert.strictEqual(path.resolveRelative("index" as FullSlug, "index" as FullSlug), "./")
