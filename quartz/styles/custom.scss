@@ -76,30 +76,30 @@ details.note-properties {
   border-radius: 5px
 }
 
-/* Force all embedded SVG tables to be fully responsive and match standard images */
-p object[type="image/svg+xml"] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5rem;    
-  margin-bottom: .5rem; 
-  width: 90%;            /* Matches your standard image layout */
-  max-width: 100%;       
-  height: auto;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 5px
-}
+// /* Force all embedded SVG tables to be fully responsive and match standard images */
+// p object[type="image/svg+xml"] {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: .5rem;    
+//   margin-bottom: .5rem; 
+//   width: 90%;            /* Matches your standard image layout */
+//   max-width: 100%;       
+//   height: auto;
+//   background-color: #ffffff;
+//   padding: 1rem;
+//   border-radius: 5px
+// }
 
-/* Increase touch target sizes for the Explorer list on mobile screens */
-@media (max-width: 768px) {
-  #explorer-content ul li {
-    padding-top: 0.6rem;    /* Adds vertical spacing above text */
-    padding-bottom: 0.6rem; /* Adds vertical spacing below text */
-  }
+// /* Increase touch target sizes for the Explorer list on mobile screens */
+// @media (max-width: 768px) {
+//   #explorer-content ul li {
+//     padding-top: 0.6rem;    /* Adds vertical spacing above text */
+//     padding-bottom: 0.6rem; /* Adds vertical spacing below text */
+//   }
 
-  #explorer-content a {
-    display: inline-block;  /* Expands the clickable zone to the full height */
-    width: 100%;            /* Allows users to tap anywhere along the line */
-  }
-}
+//   #explorer-content a {
+//     display: inline-block;  /* Expands the clickable zone to the full height */
+//     width: 100%;            /* Allows users to tap anywhere along the line */
+//   }
+// }
